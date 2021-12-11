@@ -16,3 +16,42 @@ a:hover {
     color: #0A0A0A;
 }
 
+.header-main {
+    /* Flexbox */
+    display: flex;
+
+    /* Sticky */
+    position: sticky;
+    top: 0;
+
+    /* Border */
+    border-bottom: 2px solid #0A0A0A;
+
+    /* Take up all the space */
+    height: 100%;
+    width: 100%;
+
+    /* Styling */
+    background-color: #36454F;
+}
+
+.header-logo {
+
+}
+
+.header-logo:hover {
+    color: #0A0A0A;
+}
+
+.header-sub {
+    /* Flexbox */
+    display: flex;
+    justify-content: right;
+    flex-grow: 1;
+
+    text-indent: 25px;
+}
+
+.header-sub h2 {
+    border: 2px solid #0A0A0A;
+}
