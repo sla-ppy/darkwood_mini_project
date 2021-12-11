@@ -29,7 +29,7 @@ Text material:
 All of the text shown on the page is phrased by me.
 
 # Tracking Progress:
-![](https://github.com/sla-ppy/pronovix_mini_project/blob/master/progress_track.png)
+![progress_track.png](https://github.com/sla-ppy/pronovix_mini_project/blob/master/proj_mng/progress_track.png)
 
 # Project Board:
 
