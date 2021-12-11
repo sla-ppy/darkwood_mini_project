@@ -1,0 +1,24 @@
+.header-main {
+    /* Flexbox */
+    display: flex;
+
+    /* Sticky */
+    position: sticky;
+    top: 0;
+
+    /* Border */
+    border-bottom: 2px solid black;
+}
+
+.header-sub {
+    /* Flexbox */
+    display: flex;
+    justify-content: right;
+    flex-grow: 1;
+
+    text-indent: 25px;
+}
+
+.header-sub h2 {
+    border: 2px solid black;
+}
