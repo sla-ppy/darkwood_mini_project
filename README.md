@@ -1,5 +1,4 @@
 # pronovix_mini_project
-
 Submission for the 2021-2022 ITrainee program
 
 ## Project Demo:
@@ -29,7 +28,8 @@ Hopefully I've picked the best ones to show off the game as best I can.
 Text material:
 All of the text shown on the page is phrased by me.
 
-
+# Tracking Progress:
+![](https://github.com/sla-ppy/pronovix_mini_project/blob/master/progress_track.png)
 
 # Project Board:
 
