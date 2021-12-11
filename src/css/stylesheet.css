@@ -1,24 +1,18 @@
-.header-main {
-    /* Flexbox */
-    display: flex;
+body {
+    /* Base Text Color */
+    color: #fffbfb;
 
-    /* Sticky */
-    position: sticky;
-    top: 0;
-
-    /* Border */
-    border-bottom: 2px solid black;
+    /* Background styling */
+    background-color: #0A0A0A;
 }
 
-.header-sub {
-    /* Flexbox */
-    display: flex;
-    justify-content: right;
-    flex-grow: 1;
-
-    text-indent: 25px;
+a {
+    /* Link stlying */
+    color: #fffbfb;
 }
 
-.header-sub h2 {
-    border: 2px solid black;
+a:hover {
+    /* Link hover styling */
+    color: #0A0A0A;
 }
+
