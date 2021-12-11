@@ -4,6 +4,8 @@ Submission for the 2021-2022 ITrainee program
 
 ## Project Demo:
 
+![alt text](https://github.com/sla-ppy/pronovix_mini_project/blob/master/progress_track.png")
+
 ### Sources:
 
 I dont take credit for any of the materials I've used while making this site.
