@@ -1,5 +1,9 @@
+/* --- MAIN START --- */
 body {
-    /* Base Text Color */
+    /* Remove extra space */
+    margin: 0;
+
+    /* Base text color */
     color: #fffbfb;
 
     /* Background styling */
@@ -7,7 +11,10 @@ body {
 }
 
 a {
-    /* Link stlying */
+    /* Remove base underline */
+    text-decoration: none;
+
+    /* Link styling */
     color: #fffbfb;
 }
 
@@ -15,7 +22,11 @@ a:hover {
     /* Link hover styling */
     color: #0A0A0A;
 }
+/* --- MAIN END --- */
 
+
+
+/* --- HEADER START --- */
 .header-main {
     /* Flexbox */
     display: flex;
@@ -24,7 +35,7 @@ a:hover {
     position: sticky;
     top: 0;
 
-    /* Border */
+    /* Borders */
     border-bottom: 2px solid #0A0A0A;
 
     /* Take up all the space */
@@ -36,22 +47,49 @@ a:hover {
 }
 
 .header-logo {
+    /* Flexbox */
+    flex: 1;
 
+    margin: auto;
 }
 
-.header-logo:hover {
-    color: #0A0A0A;
+.header-logo-img {
 }
 
-.header-sub {
+.header-logo-img:hover {
+}
+
+.header-logo-text {
+}
+
+.header-logo-text:hover {
+}
+
+.header-placeholder {
     /* Flexbox */
     display: flex;
-    justify-content: right;
     flex-grow: 1;
+    justify-content: right;
 
+    /* Text */
     text-indent: 25px;
+    text-align: center;
 }
 
-.header-sub h2 {
-    border: 2px solid #0A0A0A;
+.header-links {
+    /* Flexbox */
+    flex: 1;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    /* Padding */
+    padding-right: 25px;
+
+    /* Text styling */
+    font-size: 35px;
+    word-spacing: 50px;
+    text-indent: 25px;
+    text-align: center;
 }
+/* --- HEADER END --- */
