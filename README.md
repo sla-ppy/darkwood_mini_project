@@ -5,7 +5,7 @@ Submission for the 2021-2022 ITrainee program
 
 ### Sources:
 
-I dont take credit for any of the materials I've used while making this site.
+I dont take credit for any of the materials(Expect for the ones I made by myself) I've used while making this site.
 All of the rights belong to the original and hardworking creators.
 
 Fonts:
