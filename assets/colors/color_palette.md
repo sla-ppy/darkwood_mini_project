@@ -23,4 +23,4 @@ Darkest
 #88B0D7
 #ABC7E3
 #CDDEEE
-Lightess
+Lightest
