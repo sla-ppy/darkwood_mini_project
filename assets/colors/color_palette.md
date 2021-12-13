@@ -1,12 +1,18 @@
 # Idea: Include pictures of each colours as a list, show them off, why they are included, how they connect to other colours.
-
-Black - #000000
-Jet Black - #0A0A0A
-
-Black - Charcoal gradient: #17262f
-
-Charcoal - #36454F
-
+| Color Name  | Hex Values |
+| --- | --- |
+| Black  | #000000  |
+| Jet Black  | #0A0A0A  |
+| Black - Charcoal gradient | #17262F|
+| Charcoal | #36454F |
+| x | x |
+| x | x |
+| x | x |
+| x | x |
+| x | x |
+| x | x |
+| Stroustrup White | #FFFBFB |
+| White | #FFFFFF |
 
 Blue -
 Darkest
@@ -17,9 +23,4 @@ Darkest
 #88B0D7
 #ABC7E3
 #CDDEEE
-
-
-Lighest
-
-
-White - #ffffff
+Lightess
