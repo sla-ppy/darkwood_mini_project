@@ -1,4 +1,10 @@
-# Idea: Include pictures of each colours as a list, show them off, why they are included, how they connect to other colours.
+# Palette:
+I love to pick my own colours to work with.
+
+Given the freedom, I believe I chose some really neat colors to please the viewer's eyes!
+
+## Idea: Include pictures of each colours as a list, show them off, why they are included, how they connect to other colours.
+
 | Color Name  | Hex Values |
 | --- | --- |
 | Black  | #000000  |
