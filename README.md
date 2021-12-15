@@ -18,11 +18,12 @@ Hopefully I've picked the best ones to show off the game as best I can.
 Text material:
 All of the text shown on the page is phrased by me.
 
+# Project Development States:
+
 # Tracking Progress:
 ![progress_track.png](https://github.com/sla-ppy/pronovix_mini_project/blob/master/proj_mng/progress_track.png)
 
-# Project Board:
-
+# Things to add as real text about the game:
 Other features to add:
 - Talk about gameplay systems:
     - Crafting
@@ -32,4 +33,3 @@ Other features to add:
     - Creatures(Wolves, Bears, Deers, AI behaviour)
 
 - Talk about why someone uninterested in the game should play it? What do they gain out of spending money yet on another game? Why is this game special, why does it stand out?
-
