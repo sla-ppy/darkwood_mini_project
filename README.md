@@ -19,6 +19,9 @@ Text material:
 All of the text shown on the page is phrased by me.
 
 # Project Development States:
+![project_states](https://github.com/sla-ppy/pronovix_mini_project/blob/d14b2f16b1c37c15b0ba80df86172f9c6865d274/proj_mng/project_states.png)
+
+<br>
 
 # Tracking Progress:
 ![progress_track.png](https://github.com/sla-ppy/pronovix_mini_project/blob/master/proj_mng/progress_track.png)
