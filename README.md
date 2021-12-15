@@ -10,16 +10,6 @@ All of the rights belong to the original and hardworking creators.
 
 Fonts:
 
-
-Palette:
-I love to pick my own colours to work with.
-Given the freedom, I believe I choose some really neat colors to please the viewer's eyes!
-
-Palette List(Colors, and why them):
-- Color a
-- Color b
-- Color c
-
 Images:
 All of the images shown on the website are taken from The Long Dark, one of my favourite games.
 Each image is a moment of in-game time I've spent in the game world.
