@@ -3,93 +3,77 @@ body {
     /* Remove extra space */
     margin: 0;
 
-    /* Base text color */
-    color: #fffbfb;
+    /* Base font */
+    font-family: "Teko", serif;
 
-    /* Background styling */
+    /* Base text color */
+    color: #FFFBFB;
+
+    /* Base background */
     background-color: #0A0A0A;
 }
 
 a {
-    /* Remove base underline */
+    /* Remove link underline */
     text-decoration: none;
-
-    /* Link styling */
-    color: #fffbfb;
-}
-
-a:hover {
-    /* Link hover styling */
-    color: #0A0A0A;
+    color: #FFFBFB;
 }
 /* --- MAIN END --- */
 
 
-
-/* --- HEADER START --- */
-.header-main {
-    /* Flexbox */
+/* --- PAGE 1 START --- */
+.page-1-header {
+    /* Flexbox properties */
     display: flex;
 
-    /* Sticky */
-    position: sticky;
-    top: 0;
-
-    /* Borders */
-    border-bottom: 2px solid #0A0A0A;
-
-    /* Take up all the space */
-    height: 100%;
+    /* Size definition */
+    height: 40px;
     width: 100%;
-
-    /* Styling */
-    background-color: #36454F;
 }
 
-.header-logo {
-    /* Flexbox */
-    flex: 1;
-
-    margin: auto;
+.page-1-header-hamburger {
+    /* Size definition */
+    height: 40px;
+    width: 40px;
 }
 
-.header-logo-img {
-}
-
-.header-logo-img:hover {
-}
-
-.header-logo-text {
-}
-
-.header-logo-text:hover {
-}
-
-.header-placeholder {
-    /* Flexbox */
-    display: flex;
-    flex-grow: 1;
-    justify-content: right;
-
-    /* Text */
-    text-indent: 25px;
-    text-align: center;
-}
-
-.header-links {
-    /* Flexbox */
-    flex: 1;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-
+.page-1-header-menus {
     /* Padding */
-    padding-right: 25px;
+    padding-right: 20px;
 
-    /* Text styling */
-    font-size: 35px;
-    word-spacing: 50px;
-    text-indent: 25px;
-    text-align: center;
+    /* Flexbox properties */
+    flex: 1;
+    margin: auto;
+
+    /* Text properties */
+    font-size: 20px;
+    text-align: right;
+    text-shadow: -1px -1px 1px #0A0A0A, 2px 2px 1px #292929;
 }
-/* --- HEADER END --- */
+
+
+.page-1-body {
+    /* Flexbox properties */
+    display: flex;
+
+    /* Size definition */
+    width: 100%;
+    height: 600px;
+
+    /* Background */
+    background-image: url("../../assets/exports/page_1/background.png");
+}
+
+.page-1-body-logo {
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 435px;
+
+    filter: blur(0.5px);
+
+    width: 320px;
+    height: 75px;
+}
+
+/* --- PAGE 1 END --- */
