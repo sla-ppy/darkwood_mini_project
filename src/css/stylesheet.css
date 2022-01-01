@@ -29,6 +29,11 @@ a {
     /* Size definition */
     height: 40px;
     width: 100%;
+
+    position: sticky;
+    top: 0;
+
+    background-color: #0A0A0A;
 }
 
 .page-1-header-hamburger {
@@ -65,15 +70,64 @@ a {
 }
 
 .page-1-body-logo {
-    justify-content: center;
-    align-items: center;
+    /* Margins */
     margin-left: 20px;
     margin-top: 435px;
 
-    filter: blur(0.5px);
-
+    /* Size definition */
     width: 320px;
     height: 75px;
 }
 
 /* --- PAGE 1 END --- */
+
+
+/* --- PAGE 2 START --- */
+
+.page-2-shop h1 {
+    /* Background */
+    background: #000000;
+
+    /* Margins */
+    margin: auto;
+
+    /* Text properties */
+    text-align: center;
+    font-size: 44px;
+}
+
+.youtube-widget {
+    /* Margins */
+    margin-bottom: 50px;
+}
+
+.youtube-widget iframe {
+    /* Border properties */
+    border: none;
+
+    /* Size definition */
+    width: 360px;
+    height: 320px;
+}
+
+.steam-widget {
+    /* Margins */
+    margin-bottom: 25px;
+}
+
+.steam-widget iframe {
+    /* Border properties */
+    border: none;
+
+    /* Size definition */
+    width: 360px;
+    height: 200px;
+}
+
+.gog-widget {
+    /* Size definition */
+    width: 360px;
+    height: 200px;
+}
+
+/* --- PAGE 2 END --- */

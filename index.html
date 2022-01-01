@@ -6,10 +6,31 @@
 
     <!-- Add CSS here: -->
     <link rel="stylesheet" href="src/css/stylesheet.css">
+
+    <!-- Add JS here: -->
+    <!-- (We only use JS script here throughout the project because the GOG widget requires so) -->
+    <script>
+        (function(w,d,s,i){
+            function load () {
+                var elScript = d.createElement(s);
+                elScript.type = 'text/javascript';
+                elScript.async = true;
+                elScript.src = 'https://api.gog.com/v1/distributors/widget-latest.js'
+                elTarget = d.getElementsByTagName(s)[0];
+                elTarget.parentNode.insertBefore(elScript, elTarget);
+                w['gogWidgetDistributorId'] = i;
+            }
+            if (w.attachEvent)
+                w.attachEvent('onload', load);
+            else
+                w.addEventListener('load', load, false);
+        })(window, window.document, 'script', '52756712356612660')
+    </script>
+
     <!-- Favicon: -->
     <!-- <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon_32x32.png"> -->
 
-    <!-- Custom font: -->
+    <!-- Custom fonts: -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
@@ -46,6 +67,28 @@
     </div>
 
 </div>
+
+<div class="page-2-shop">
+
+    <h1>
+        Watch the trailer
+    </h1>
+
+    <!-- Youtube trailer embed -->
+    <div class="youtube-widget">
+        <iframe src="https://www.youtube.com/embed/3S3tmWfFACQ"></iframe>
+    </div>
+
+        <!-- Steam purchase widget -->
+    <div class="steam-widget">
+        <iframe src="https://store.steampowered.com/widget/274520/"></iframe>
+    </div>
+
+    <!-- GOG purchase widget -->
+    <div class="gog-widget" data-game="1578751181"></div>
+
+</div>
+
 
 
 
