@@ -5,34 +5,4 @@ Submission for the 2021-2022 ITrainee program
 
 ### Sources:
 
-I dont take credit for any of the materials(Expect for the ones I made by myself) I've used while making this site.
-All of the rights belong to the original and hardworking creators.
-
-Fonts:
-
-Images:
-All of the images shown on the website are taken from The Long Dark, one of my favourite games.
-Each image is a moment of in-game time I've spent in the game world.
-Hopefully I've picked the best ones to show off the game as best I can.
-
-Text material:
-All of the text shown on the page is phrased by me.
-
-# Project Development States:
-![project_states](https://github.com/sla-ppy/pronovix_mini_project/blob/d14b2f16b1c37c15b0ba80df86172f9c6865d274/proj_mng/project_states.png)
-
-<br>
-
-# Tracking Progress:
-![progress_track.png](https://github.com/sla-ppy/pronovix_mini_project/blob/master/proj_mng/progress_track.png)
-
-# Things to add as real text about the game:
-Other features to add:
-- Talk about gameplay systems:
-    - Crafting
-    - Health System
-    - Logs
-    - Vistas
-    - Creatures(Wolves, Bears, Deers, AI behaviour)
-
-- Talk about why someone uninterested in the game should play it? What do they gain out of spending money yet on another game? Why is this game special, why does it stand out?
+Have to re-do documentation to be satisfactory.
