@@ -3,6 +3,8 @@ body {
     /* Remove extra space */
     margin: 0;
 
+    height: auto;
+
     /* Base font */
     font-family: "Teko", serif;
 
@@ -18,6 +20,17 @@ a {
     text-decoration: none;
     color: #FFFBFB;
 }
+
+a:hover {
+    color: #7A7979;
+}
+
+.highlight {
+    display: inline;
+
+    color: #FF1515;
+}
+
 /* --- MAIN END --- */
 
 
@@ -30,9 +43,11 @@ a {
     height: 40px;
     width: 100%;
 
+    /* Sticky header */
     position: sticky;
     top: 0;
 
+    /* Background */
     background-color: #0A0A0A;
 }
 
@@ -40,6 +55,18 @@ a {
     /* Size definition */
     height: 40px;
     width: 40px;
+}
+
+.page-1-header-logo {
+    /* Size definition */
+    width: 130px;
+    height: 40px;
+
+    /* Margins */
+    margin-top: 10px;
+
+    /* Text properties */
+    text-align: center;
 }
 
 .page-1-header-menus {
@@ -56,7 +83,6 @@ a {
     text-shadow: -1px -1px 1px #0A0A0A, 2px 2px 1px #292929;
 }
 
-
 .page-1-body {
     /* Flexbox properties */
     display: flex;
@@ -66,7 +92,7 @@ a {
     height: 600px;
 
     /* Background */
-    background-image: url("../../assets/exports/page_1/background.png");
+    background-image: url("../../assets/exports/mobile_page_1/background.png");
 }
 
 .page-1-body-logo {
@@ -82,14 +108,19 @@ a {
 /* --- PAGE 1 END --- */
 
 
+
 /* --- PAGE 2 START --- */
+.page-2-shop {
+    /* Margins */
+    margin-bottom: 50px;
+}
 
 .page-2-shop h1 {
-    /* Background */
-    background: #000000;
-
     /* Margins */
     margin: auto;
+
+    /* Background */
+    background: #000000;
 
     /* Text properties */
     text-align: center;
@@ -129,5 +160,49 @@ a {
     width: 360px;
     height: 200px;
 }
-
 /* --- PAGE 2 END --- */
+
+
+
+/* --- PAGE 3 START --- */
+
+.page-3-headline {
+    /* Text properties */
+    text-align: center;
+}
+
+.page-3-headline img {
+    /* Margins */
+    margin-bottom: 25px;
+}
+
+.page-3-headline img:hover {
+    border: 10px;
+    border-color: #7A7979;
+}
+
+.page-3-headline-main {
+    /* Size definition */
+    height: 100px;
+    width: 100%;
+
+    /* Margins */
+    margin-bottom: 25px;
+
+    /* Text properties */
+    font-size: 36px;
+}
+
+.page-3-headline-support {
+    /* Size definition */
+    height: 100px;
+    width: 100%;
+
+    /* Margins */
+    margin-bottom: 25px;
+
+    /* Text properties */
+    font-size: 24px;
+}
+
+/* --- PAGE 3 END --- */

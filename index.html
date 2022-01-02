@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <title>Darkwood</title>
 
+    <!-- Created by: -->
+    <!-- Miklos Vida / sla-ppy -->
+    <!-- © 2022, All rights reserved -->
+
+    <!-- GUIDELINES: -->
+    <!-- The way I've written HTML was so that there is no CSS styling to be found in here, I tried using divs to write as clean as I possibly could.  -->
+
     <!-- Add CSS here: -->
     <link rel="stylesheet" href="src/css/stylesheet.css">
 
     <!-- Add JS here: -->
     <!-- (We only use JS script here throughout the project because the GOG widget requires so) -->
     <script>
-        (function(w,d,s,i){
-            function load () {
+        (function (w, d, s, i) {
+            function load() {
                 var elScript = d.createElement(s);
                 elScript.type = 'text/javascript';
                 elScript.async = true;
@@ -20,6 +27,7 @@
                 elTarget.parentNode.insertBefore(elScript, elTarget);
                 w['gogWidgetDistributorId'] = i;
             }
+
             if (w.attachEvent)
                 w.attachEvent('onload', load);
             else
@@ -40,13 +48,16 @@
 </head>
 
 <body>
-
 <div class="page-1-intro">
 
     <div class="page-1-header">
         <div class="page-1-header-hamburger">
             <!-- TODO: replace placeholder img with proper css -->
-            <img src="assets/exports/page_1/hamburger.png" alt="assets/exports/page_1/hamburger.png"/>
+            <img src="assets/exports/mobile_page_1/hamburger.png" alt="assets/exports/page_1/hamburger.png"/>
+        </div>
+
+        <div class="page-1-header-logo">
+            <a href="index.html"><img src="assets/exports/mobile_page_1/header_logo.png" alt="assets/exports/mobile_page_1/header_logo.png"/></a>
         </div>
 
         <div class="page-1-header-menus">
@@ -62,16 +73,18 @@
 
     <div class="page-1-body">
         <div class="page-1-body-logo">
-            <img src="assets/exports/page_1/main_logo.png" alt="assets/exports/page_1/main_logo.png"/>
+            <img src="assets/exports/mobile_page_1/main_logo.png" alt="assets/exports/page_1/main_logo.png"/>
         </div>
     </div>
 
 </div>
 
+
+
 <div class="page-2-shop">
 
     <h1>
-        Watch the trailer
+        <a href="https://www.youtube.com/embed/3S3tmWfFACQ">Watch the trailer</a>
     </h1>
 
     <!-- Youtube trailer embed -->
@@ -79,7 +92,7 @@
         <iframe src="https://www.youtube.com/embed/3S3tmWfFACQ"></iframe>
     </div>
 
-        <!-- Steam purchase widget -->
+    <!-- Steam purchase widget -->
     <div class="steam-widget">
         <iframe src="https://store.steampowered.com/widget/274520/"></iframe>
     </div>
@@ -89,6 +102,26 @@
 
 </div>
 
+
+<div class="page-3-headline">
+
+    <div class="page-3-headline-main">
+        A
+        <div class="highlight">new perspective</div>
+        on survival horror
+    </div>
+
+    <img src="assets/exports/mobile_page_3/gameplay_1.png" alt="assets/exports/mobile_page_3/gameplay_1.png">
+
+    <div class="page-3-headline-support">
+        Scavenge and explore a rich, ever-changing free-roam world by day, then hunker down in your hideout and
+        <div class="highlight">pray for the morning light</div>
+        .
+    </div>
+
+    <img src="assets/exports/mobile_page_3/gameplay_2.png" alt="assets/exports/mobile_page_3/gameplay_2.png">
+
+</div>
 
 
 
