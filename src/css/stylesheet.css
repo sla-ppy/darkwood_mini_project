@@ -274,39 +274,34 @@ a:hover {
 
 
 /* --- PAGE 5 START --- */
-.page-5-features-one {
+.page-5-features {
     margin-left: 9px;
     margin-right: 9px;
 }
 
-.page-5-features-one-sections {
+.page-5-features-sections {
     display: flex;
 
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
 
-.page-5-features-one-img-bikemanbell {
-    height: 155px;
-    width: 166px;
-}
-
-.page-5-features-one-img-undergroundkey {
-    height: 156px;
-    width: 103px;
-}
-
-.page-5-features-one-img-head {
-    height: 161px;
-    width: 161px;
-}
-
-.page-5-features-one-text {
+.page-5-features-text {
     font-size: 16px;
     text-align: center;
 }
 
-.page-5-features-one-text h1 {
+.page-5-features-text h1 {
     font-size: 20px;
 }
-
 /* --- PAGE 5 END --- */
+
+
+
+/* --- PAGE 6 START --- */
+
+/* --- PAGE 6 END --- */
+
+
+
+/* --- FOOTER START --- */
+/* --- FOOTER END --- */
