@@ -173,7 +173,7 @@ a:hover {
 
 .page-3-headline img {
     /* Margins */
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 .page-3-headline img:hover {
@@ -187,7 +187,7 @@ a:hover {
     width: 100%;
 
     /* Margins */
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 
     /* Text properties */
     font-size: 36px;
@@ -199,10 +199,75 @@ a:hover {
     width: 100%;
 
     /* Margins */
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 
     /* Text properties */
     font-size: 24px;
 }
-
 /* --- PAGE 3 END --- */
+
+
+
+/* --- PAGE 4 START --- */
+.page-4-wowfactor {
+
+}
+
+.page-4-wowfactor-gif-section-one {
+    /* Flexbox properties */
+    display: flex;
+
+    /* Margins */
+    margin-bottom: 25px;
+}
+
+.page-4-wowfactor-gif-thethree img   {
+    /* Flexbox properties */
+    flex: 1;
+
+    /* Margins */
+    margin-right: 30px;
+
+    /* Size definition */
+    width: 165px;
+    height: 245px;
+}
+
+.page-4-wowfactor-gif-wolfman img {
+    /* Flexbox properties */
+    flex: 1;
+
+    /* Size definition */
+    width: 165px;
+    height: 245px;
+}
+
+.page-4-wowfactor-callout {
+    /* Background */
+    background-color: #080b07;
+
+    /* Margins */
+    margin-bottom: 25px;
+
+    /* Text properties */
+    font-size: 48px;
+    text-align: center;
+}
+
+.page-4-wowfactor-gif-section-two {
+    /* Flexbox properties */
+    display: flex;
+}
+
+.page-4-wowfactor-gif-bikeman img {
+    /* Size definition */
+    width: 209px;
+    height: 237px;
+}
+
+.page-4-wowfactor-gif-musician img {
+    /* Size definition */
+    width: 151px;
+    height: 237px;
+}
+/* --- PAGE 4 END --- */
