@@ -15,6 +15,11 @@ body {
     background-color: #0A0A0A;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     /* Remove link underline */
     text-decoration: none;
@@ -23,6 +28,8 @@ a {
 
 a:hover {
     color: #7A7979;
+
+    transition: color 0.25s ease-out 50ms;
 }
 
 .highlight {
@@ -35,7 +42,7 @@ a:hover {
 
 
 /* --- PAGE 1 START --- */
-.page-1-header {
+header {
     /* Flexbox properties */
     display: flex;
 
@@ -47,29 +54,116 @@ a:hover {
     position: sticky;
     top: 0;
 
+    /* Border properties */
+    border-right-style:solid;
+    border-width: 10px;
+    border-color: #FFFBFB;
+
     /* Background */
     background-color: #0A0A0A;
 }
 
-.page-1-header-hamburger {
+.header-hamburger {
     /* Size definition */
     height: 40px;
     width: 40px;
 }
 
-.page-1-header-logo {
-    /* Size definition */
-    width: 130px;
-    height: 40px;
+/* TODO: include comments for properties */
+#header-hamburger-menu-toggle {
+    opacity: 0;
+}
+#header-hamburger-menu-toggle:checked + .header-hamburger-menu-btn > span {
+    transform: rotate(45deg);
+}
+#header-hamburger-menu-toggle:checked + .header-hamburger-menu-btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+#header-hamburger-menu-toggle:checked + .header-hamburger-menu-btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#header-hamburger-menu-toggle:checked ~ .menu-box {
+    left: 0 !important;
+}
+.header-hamburger-menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
 
+.header-hamburger-menu-btn:hover {
+    color: #7A7979;
+    transition: color 0.25s ease-out 50ms;
+}
+
+.header-hamburger-menu-btn > span,
+.header-hamburger-menu-btn > span::before,
+.header-hamburger-menu-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #FFFBFB;
+    transition-duration: .25s;
+}
+
+.header-hamburger-menu-btn > span::before {
+    content: '';
+    top: -8px;
+}
+.header-hamburger-menu-btn > span::after {
+    content: '';
+    top: 8px;
+}
+.menu-box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 150px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #0A0A0A;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+
+    border-right-style:solid;
+    border-width: 1px;
+    border-color: #FFFBFB;
+}
+.menu-item {
+    display: block;
+    padding: 12px 24px;
+    color: #FFFBFB;
+    font-size: 32px;
+    transition-duration: .25s;
+}
+.menu-item:hover {
+
+    transition: color .25s ease-out 50ms;
+
+    background-color: #7A7979;
+    color: #0A0A0A;
+}
+
+.header-logo {
     /* Margins */
+    margin-left: 20px;
     margin-top: 10px;
 
     /* Text properties */
     text-align: center;
 }
 
-.page-1-header-menus {
+.header-menus {
     /* Padding */
     padding-right: 20px;
 
@@ -108,7 +202,6 @@ a:hover {
 /* --- PAGE 1 END --- */
 
 
-
 /* --- PAGE 2 START --- */
 .page-2-shop {
     /* Margins */
@@ -116,9 +209,6 @@ a:hover {
 }
 
 .page-2-shop h1 {
-    /* Margins */
-    margin: auto;
-
     /* Background */
     background: #000000;
 
@@ -160,8 +250,8 @@ a:hover {
     width: 360px;
     height: 200px;
 }
-/* --- PAGE 2 END --- */
 
+/* --- PAGE 2 END --- */
 
 
 /* --- PAGE 3 START --- */
@@ -171,7 +261,11 @@ a:hover {
     text-align: center;
 }
 
+/* TODO: include comments for properties */
 .page-3-headline img {
+    width: 100%;
+    height: 200px;
+
     /* Margins */
     margin-bottom: 50px;
 }
@@ -204,8 +298,8 @@ a:hover {
     /* Text properties */
     font-size: 24px;
 }
-/* --- PAGE 3 END --- */
 
+/* --- PAGE 3 END --- */
 
 
 /* --- PAGE 4 START --- */
@@ -221,7 +315,7 @@ a:hover {
     margin-bottom: 25px;
 }
 
-.page-4-wowfactor-gif-thethree img   {
+.page-4-wowfactor-gif-thethree img {
     /* Flexbox properties */
     flex: 1;
 
@@ -270,37 +364,144 @@ a:hover {
     width: 151px;
     height: 237px;
 }
+
 /* --- PAGE 4 END --- */
 
 
 /* --- PAGE 5 START --- */
 .page-5-features {
+    /* Margins */
     margin-left: 9px;
     margin-right: 9px;
 }
+.page-5-features h1 {
+    /* Background */
+    background-color: #080b07;
+
+    margin-bottom: 40px;
+
+    /* Text properties */
+    font-size: 48px;
+    text-align: center;
+}
 
 .page-5-features-sections {
+    /* Flexbox properties */
     display: flex;
 
+    /* Margins */
     margin-bottom: 40px;
 }
 
 .page-5-features-text {
+    /* Text properties */
     font-size: 16px;
     text-align: center;
 }
 
 .page-5-features-text h1 {
+    /* Text properties */
     font-size: 20px;
 }
+
 /* --- PAGE 5 END --- */
 
 
-
 /* --- PAGE 6 START --- */
+.page-6-testimonies {
+    /* Margins */
+    margin-left: 32px;
+    margin-right: 32px;
+}
 
+/* TODO: include comments for properties */
+.page-6-testimonies h1 {
+    font-size: 40px;
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.page-6-testimonies-sections-text {
+    margin-bottom: 10px;
+}
+
+.page-6-testimonies-sections-dedication {
+    /* Margins */
+    margin-bottom: 40px;
+
+    text-align: right;
+}
+
+/* TODO: include comments for properties */
+.page-6-testimonies-sections-dedication img {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.page-6-testimonies-highlight-pcgamer-first {
+    display: inline;
+
+    color: #D30A1A;
+}
+.page-6-testimonies-highlight-pcgamer-last {
+    display: inline;
+
+    color: #FFFFFF;
+}
+
+.page-6-testimonies-highlight-rockpapreshotgun-first {
+    display: inline;
+
+    color: #44208D;
+}
+.page-6-testimonies-highlight-rockpapreshotgun-last {
+    display: inline;
+
+    color: #00866B;
+}
+
+.page-6-testimonies-highlight-eurogamer {
+    display: inline;
+
+    color: #0084CC;
+}
+
+.page-6-testimonies-highlight-kotaku {
+    display: inline;
+
+    color: #FBC000;
+}
+
+.page-6-testimonies-highlight-youtube-first {
+    display: inline;
+
+    color: #FF0000;
+}
+.page-6-testimonies-highlight-youtube-last {
+    display: inline;
+
+    color: #FFFFFF;
+}
 /* --- PAGE 6 END --- */
 
+
+
+/* FOOTER START */
+footer {
+    background-color: #FFFBFB;
+}
+
+.footer-section-one {
+    display: flex;
+
+    text-align: center;
+}
+
+.footer-section-one-links {
+}
+
+/* FOOTER END */
 
 
 /* --- FOOTER START --- */

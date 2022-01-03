@@ -9,7 +9,8 @@
     <!-- © 2022, All rights reserved -->
 
     <!-- GUIDELINES: -->
-    <!-- The way I've written HTML was so that there is no CSS styling to be found in here, I tried using divs to write as clean as I possibly could.  -->
+    <!-- The way I've written HTML was so that there is minimal CSS styling to be found in here(and only for resizing images)
+    , I tried using divs to write as clean as I possibly could.  -->
 
     <!-- Add CSS here: -->
     <link rel="stylesheet" href="src/css/stylesheet.css">
@@ -48,29 +49,47 @@
 </head>
 
 <body>
-<div class="page-1-intro">
 
-    <div class="page-1-header">
-        <div class="page-1-header-hamburger">
-            <!-- TODO: replace placeholder img with proper css -->
-            <img src="assets/exports/mobile_page_1/hamburger.png" alt="assets/exports/page_1/hamburger.png"/>
-        </div>
+<header>
 
-        <div class="page-1-header-logo">
-            <a href="index.html"><img src="assets/exports/mobile_page_1/header_logo.png"
-                                      alt="assets/exports/mobile_page_1/header_logo.png"/></a>
-        </div>
+    <!-- TODO: hamburger icon div placement is weird, fix -->
+    <div class="header-hamburger">
+        <!-- CSS animation taken from here: https://alvarotrigo.com/blog/hamburger-menu-css/ -->
+        <!-- I've refit the animation to fit my purposes -->
+        <div class="header-hamburger-menu">
+            <input id="header-hamburger-menu-toggle" type="checkbox"/>
+            <label class="header-hamburger-menu-btn" for="header-hamburger-menu-toggle">
+                <span></span>
+            </label>
 
-        <div class="page-1-header-menus">
-            <a href="https://example.com/">About</a>
-            |
-            <a href="https://example.com/">Trailer</a>
-            |
-            <a href="https://example.com/">Shop</a>
-            |
-            <a href="https://example.com/">News</a>
+            <!-- TODO: set up jumps properly -->
+            <ul class="menu-box">
+                <li><a class="menu-item" href="#jump-about">About</a></li>
+                <li><a class="menu-item" href="#jump-trailer">Trailer</a></li>
+                <li><a class="menu-item" href="#jump-shop">Shop</a></li>
+                <li><a class="menu-item" href="https://example.com/">News</a></li>
+            </ul>
         </div>
     </div>
+
+    <div class="header-logo">
+        <a href="index.html"><img src="assets/exports/mobile_page_1/main_logo.png" width="90px" height="20px"
+                                  alt="assets/exports/mobile_page_1/header_logo.png"/></a>
+    </div>
+
+    <!-- TODO: set up jumps properly -->
+    <div class="header-menus">
+        <a href="#jump-about">About</a>
+        |
+        <a href="#jump-trailer">Trailer</a>
+        |
+        <a href="#jump-shop">Shop</a>
+        |
+        <a href="https://example.com/">News</a>
+    </div>
+</header>
+
+<div class="page-1-intro">
 
     <div class="page-1-body">
         <div class="page-1-body-logo">
@@ -83,7 +102,7 @@
 
 <div class="page-2-shop">
 
-    <h1>
+    <h1 id="jump-trailer">
         <a href="https://www.youtube.com/embed/3S3tmWfFACQ">Watch the trailer</a>
     </h1>
 
@@ -93,7 +112,7 @@
     </div>
 
     <!-- Steam purchase widget -->
-    <div class="steam-widget">
+    <div class="steam-widget" id="jump-shop">
         <iframe src="https://store.steampowered.com/widget/274520/"></iframe>
     </div>
 
@@ -111,7 +130,8 @@
         on survival horror
     </div>
 
-    <img src="assets/exports/mobile_page_3/gameplay_1.png" alt="assets/exports/mobile_page_3/gameplay_1.png">
+    <a href="assets/exports/mobile_page_3/gameplay1.png"><img src="assets/exports/mobile_page_3/gameplay1.png"
+                                                              alt="assets/exports/mobile_page_3/gameplay1.png"></a>
 
     <div class="page-3-headline-support">
         Scavenge and explore a rich, ever-changing free-roam world by day, then hunker down in your hideout and
@@ -119,7 +139,8 @@
         .
     </div>
 
-    <img src="assets/exports/mobile_page_3/gameplay_2.png" alt="assets/exports/mobile_page_3/gameplay_2.png">
+    <a href="assets/exports/mobile_page_3/gameplay2.png"><img src="assets/exports/mobile_page_3/gameplay2.png"
+                                                              alt="assets/exports/mobile_page_3/gameplay1.png"></a>
 
 </div>
 
@@ -148,7 +169,7 @@
             <img src="assets/exports/mobile_page_4/bikeman.gif" alt="assets/exports/mobile_page_4/bikeman.gif"/>
         </div>
 
-        <div class="page-4-wowfactor-gif-musician">
+        <div class="page-4-wowfactor-gif-musician" id="jump-about">
             <img src="assets/exports/mobile_page_4/musician.gif" alt="assets/exports/mobile_page_4/musician.gif"/>
         </div>
     </div>
@@ -158,11 +179,12 @@
 
 <div class="page-5-features">
 
+    <h1>Features</h1>
+
     <!-- Features 1/2 -->
     <div class="page-5-features-sections">
         <img src="assets/exports/mobile_page_5/bikemanbell.png" width="166px" height="155px"
              alt="assets/exports/mobile_page_5/bikemanbell.png"/>
-
 
         <div class="page-5-features-text">
             <h1>CHALLENGING GAMEPLAY</h1>
@@ -215,7 +237,7 @@
 
 
     <div class="page-5-features-sections">
-        <img src="assets/exports/mobile_page_5/doctorsbag.png" width="163" height="135"
+        <img src="assets/exports/mobile_page_5/doctorsbag.png" width="163px" height="135px"
              alt="assets/exports/mobile_page_5/doctorsbag.png"/>
 
 
@@ -240,6 +262,96 @@
     </div>
 
 </div>
+
+
+<div class="page-6-testimonies">
+
+    <h1>Testimonies</h1>
+
+    <div class="page-6-testimonies-sections-text">
+        „I gauge the scariness of horror games using my patented Curl Chance™ system, which measures how likely I am to
+        curl
+        into a ball of whimpering fear when I play them. I rate the new trailer for Darkwood, an upcoming top-down
+        survival
+        horror title from indie group Acid Wizard Studio, a “Mommy” out of 10 based on the inky shadows and surreal
+        sense of
+        unease.”
+    </div>
+
+    <div class="page-6-testimonies-sections-dedication">
+        <a href="https://whiteshaddock.co/author/omri-petitte/">
+            <div class="page-6-testimonies-highlight-pcgamer-first">Omri</div>
+            <div class="page-6-testimonies-highlight-pcgamer-last">Petite</div>
+        </a>
+        <a href="https://www.pcgamer.com/"><img src="assets/exports/mobile_page_6/pcgamer.png" width="108px"
+                                                height="22px"
+                                                alt="assets/exports/mobile_page_6/pcgamer.png"/></a>
+    </div>
+
+    <!-- TODO: refit logos to fit website design? -->
+    „It’s been SLENDER pickings in the survival horror genre recently but Darkwood has my fear-glands tingling
+    and,
+    disturbingly, salivating. My internal organs are swimming in terror-juice.”
+
+    <div class="page-6-testimonies-sections-dedication">
+        <a href="https://www.rockpapershotgun.com/authors/adam-smith">
+            <div class="page-6-testimonies-highlight-rockpapreshotgun-first">Adam</div>
+            <div class="page-6-testimonies-highlight-rockpapreshotgun-last">Smith</div>
+        </a>
+        <a href="https://www.rockpapershotgun.com/"><img src="assets/exports/mobile_page_6/rockpapershotgun.png"
+                                                         width="62px" height="41px"
+                                                         alt="assets/exports/mobile_page_6/rockpapershotgun.png"/></a>
+    </div>
+
+    „Darkwood is a promising top-down horror roguelike that has cult classic written all over it”
+    <div class="page-6-testimonies-sections-dedication">
+        <a href="https://www.eurogamer.net/authors/647">
+            <div class="page-6-testimonies-highlight-eurogamer">Jeffrey Matulef</div>
+        </a>
+        <a href="https://www.eurogamer.net/"><img src="assets/exports/mobile_page_6/eurogamer.png" width="107px"
+                                                  height="24px"
+                                                  alt="assets/exports/mobile_page_6/eurogamer.png"/></a>
+    </div>
+
+    „The fear of the unknown is powerful. Darkwood takes that idea to heart”
+    <div class="page-6-testimonies-sections-dedication">
+        <a href="https://kotaku.com/author/xpatriciah">
+            <div class="page-6-testimonies-highlight-kotaku">Patricia Hernandez</div>
+        </a>
+        <a href="https://kotaku.com/"><img src="assets/exports/mobile_page_6/kotaku.png" width="111px" height="32px"
+                                           alt="assets/exports/mobile_page_6/kotaku.png"/></a>
+    </div>
+
+    „Holy shitfu*k, this game looks amazeballs”
+    <div class="page-6-testimonies-sections-dedication">
+        <div class="page-6-testimonies-highlight-youtube-first">niki</div>
+        <div class="page-6-testimonies-highlight-youtube-last">to122</div>
+        <img src="assets/exports/mobile_page_6/youtube.png" width="111.61px" height="25px"
+             alt="assets/exports/mobile_page_6/youtube.png"/>
+        user
+    </div>
+</div>
+
+<footer>
+
+    <div class="footer-section-one">
+        <img src="assets/exports/mobile_page_7/doctorleft.png" width="135px" height="104px"
+             alt="assets/exports/mobile_page_7/doctorleft.png">
+        <div class="footer-section-one-links">
+            <a href="https://example.com/">Privacy Policy</a>
+            <a href="https://example.com/">Terms of Use</a>
+            <a href="https://example.com/">Support</a>
+            <a href="https://example.com/">Community</a>
+        </div>
+        <img src="assets/exports/mobile_page_7/doctorright.png" width="135px" height="104px"
+             alt="assets/exports/mobile_page_7/doctorleft.png">
+    </div>
+
+
+    <!-- TODO: find a way for socials to be separate svg-s or icons -->
+
+
+</footer>
 
 </body>
 
