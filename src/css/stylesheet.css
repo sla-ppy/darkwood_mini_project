@@ -271,3 +271,42 @@ a:hover {
     height: 237px;
 }
 /* --- PAGE 4 END --- */
+
+
+/* --- PAGE 5 START --- */
+.page-5-features-one {
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+.page-5-features-one-sections {
+    display: flex;
+
+    margin-bottom: 25px;
+}
+
+.page-5-features-one-img-bikemanbell {
+    height: 155px;
+    width: 166px;
+}
+
+.page-5-features-one-img-undergroundkey {
+    height: 156px;
+    width: 103px;
+}
+
+.page-5-features-one-img-head {
+    height: 161px;
+    width: 161px;
+}
+
+.page-5-features-one-text {
+    font-size: 16px;
+    text-align: center;
+}
+
+.page-5-features-one-text h1 {
+    font-size: 20px;
+}
+
+/* --- PAGE 5 END --- */
