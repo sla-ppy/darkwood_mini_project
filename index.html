@@ -1,22 +1,27 @@
+<!-- Created by: -->
+<!-- Miklos Vida / sla-ppy -->
+<!-- © 2022, All rights reserved -->
+
+<!-- README: -->
+<!-- The way I've written HTML was so that there is minimal CSS styling to be found in here(and only for resizing images)
+, I tried using divs to write as clean as I possibly could.  -->
+
+<!-- I've asked for permission so that I could work with all of the assets on Darkwood, more on this on git-hub. -->
+
+<!-- However, I've done something terrible and I've modified certain logos in the testimonies section out of my own free will. I am aware of this,
+however this site wont be used in commercial use, nor do I plan on gaining anything out of the project, other than it being examined by Pronovix. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Darkwood</title>
 
-    <!-- Created by: -->
-    <!-- Miklos Vida / sla-ppy -->
-    <!-- © 2022, All rights reserved -->
-
-    <!-- GUIDELINES: -->
-    <!-- The way I've written HTML was so that there is minimal CSS styling to be found in here(and only for resizing images)
-    , I tried using divs to write as clean as I possibly could.  -->
-
     <!-- Add CSS here: -->
     <link rel="stylesheet" href="src/css/stylesheet.css">
 
     <!-- Add JS here: -->
-    <!-- (We only use JS script here throughout the project because the GOG widget requires so) -->
+    <!-- (I've only used JS script here throughout the project because the GOG widget required so and I wanted to include it because of my personal openness towards GOG.) -->
     <script>
         (function (w, d, s, i) {
             function load() {
@@ -51,33 +56,31 @@
 <body>
 
 <header>
+    <!-- CSS animation taken from here: https://alvarotrigo.com/blog/hamburger-menu-css/ -->
+    <!-- I've refit the animation to fit my purposes -->
+    <div class="header-hamburger-menu">
+        <input id="header-hamburger-menu-toggle" type="checkbox"/>
+        <label class="header-hamburger-menu-btn" for="header-hamburger-menu-toggle">
+            <span></span>
+        </label>
 
-    <!-- TODO: hamburger icon div placement is weird, fix -->
-    <div class="header-hamburger">
-        <!-- CSS animation taken from here: https://alvarotrigo.com/blog/hamburger-menu-css/ -->
-        <!-- I've refit the animation to fit my purposes -->
-        <div class="header-hamburger-menu">
-            <input id="header-hamburger-menu-toggle" type="checkbox"/>
-            <label class="header-hamburger-menu-btn" for="header-hamburger-menu-toggle">
-                <span></span>
-            </label>
-
-            <!-- TODO: set up jumps properly -->
-            <ul class="menu-box">
-                <li><a class="menu-item" href="#jump-about">About</a></li>
-                <li><a class="menu-item" href="#jump-trailer">Trailer</a></li>
-                <li><a class="menu-item" href="#jump-shop">Shop</a></li>
-                <li><a class="menu-item" href="https://example.com/">News</a></li>
-            </ul>
-        </div>
+        <ul class="menu-box">
+            <li><a class="menu-item" href="#jump-about">About</a></li>
+            <li><a class="menu-item" href="#jump-trailer">Trailer</a></li>
+            <li><a class="menu-item" href="#jump-shop">Shop</a></li>
+            <li><a class="menu-item" href="https://example.com/">News</a></li>
+            <li><a class="menu-item" href="https://example.com/">Privacy Policy</a></li>
+            <li><a class="menu-item" href="https://example.com/">Terms of Use</a></li>
+            <li><a class="menu-item" href="https://example.com/">Support</a></li>
+            <li><a class="menu-item" href="https://example.com/">Community</a></li>
+        </ul>
     </div>
 
     <div class="header-logo">
-        <a href="index.html"><img src="assets/exports/mobile_page_1/main_logo.png" width="90px" height="20px"
-                                  alt="assets/exports/mobile_page_1/header_logo.png"/></a>
+        <a href="index.html"><img src="assets/exports/mobile_page_1/main_logo_highres.jpg" width="90px" height="20px"
+                                  alt="assets/exports/mobile_page_1/main_logo_highres.jpg"/></a>
     </div>
 
-    <!-- TODO: set up jumps properly -->
     <div class="header-menus">
         <a href="#jump-about">About</a>
         |
@@ -93,12 +96,16 @@
 
     <div class="page-1-body">
         <div class="page-1-body-logo">
-            <img src="assets/exports/mobile_page_1/main_logo.png" alt="assets/exports/page_1/main_logo.png"/>
+            <img src="assets/exports/mobile_page_1/main_logo_highres.jpg" width="320px" height="75px" alt="assets/exports/mobile_page_1/main_logo_highres.jpg"/>
         </div>
     </div>
 
 </div>
 
+<div class="sticky-footer">
+    <a href="https://darkwoodgame.com/"><img src="assets/exports/mobile_page_1/studiologo.jpg" width="40px" height="65px"
+         alt="assets/exports/mobile_page_1/studiologo.jpg"></a>
+</div>
 
 <div class="page-2-shop">
 
@@ -120,7 +127,6 @@
     <div class="gog-widget" data-game="1578751181"></div>
 
 </div>
-
 
 <div class="page-3-headline">
 
@@ -159,9 +165,7 @@
 
     <div class="page-4-wowfactor-callout">
         Greet your new family...
-        Trust
-        <div class="highlight">NO</div>
-        one.
+        <div class="highlight">Who will you trust?</div>
     </div>
 
     <div class="page-4-wowfactor-gif-section-two">
@@ -260,7 +264,6 @@
         <img src="assets/exports/mobile_page_5/shinycross.png" width="132px" height="185px"
              alt="assets/exports/mobile_page_5/shinycross.png"/>
     </div>
-
 </div>
 
 
@@ -288,7 +291,6 @@
                                                 alt="assets/exports/mobile_page_6/pcgamer.png"/></a>
     </div>
 
-    <!-- TODO: refit logos to fit website design? -->
     „It’s been SLENDER pickings in the survival horror genre recently but Darkwood has my fear-glands tingling
     and,
     disturbingly, salivating. My internal organs are swimming in terror-juice.”
@@ -298,9 +300,9 @@
             <div class="page-6-testimonies-highlight-rockpapreshotgun-first">Adam</div>
             <div class="page-6-testimonies-highlight-rockpapreshotgun-last">Smith</div>
         </a>
-        <a href="https://www.rockpapershotgun.com/"><img src="assets/exports/mobile_page_6/rockpapershotgun.png"
+        <a href="https://www.rockpapershotgun.com/"><img src="assets/exports/mobile_page_6/rockpapershotgun_dark.png"
                                                          width="62px" height="41px"
-                                                         alt="assets/exports/mobile_page_6/rockpapershotgun.png"/></a>
+                                                         alt="assets/exports/mobile_page_6/rockpapershotgun_dark.png"/></a>
     </div>
 
     „Darkwood is a promising top-down horror roguelike that has cult classic written all over it”
@@ -308,9 +310,9 @@
         <a href="https://www.eurogamer.net/authors/647">
             <div class="page-6-testimonies-highlight-eurogamer">Jeffrey Matulef</div>
         </a>
-        <a href="https://www.eurogamer.net/"><img src="assets/exports/mobile_page_6/eurogamer.png" width="107px"
+        <a href="https://www.eurogamer.net/"><img src="assets/exports/mobile_page_6/eurogamer_dark.png" width="107px"
                                                   height="24px"
-                                                  alt="assets/exports/mobile_page_6/eurogamer.png"/></a>
+                                                  alt="assets/exports/mobile_page_6/eurogamer_dark.png"/></a>
     </div>
 
     „The fear of the unknown is powerful. Darkwood takes that idea to heart”
@@ -318,15 +320,15 @@
         <a href="https://kotaku.com/author/xpatriciah">
             <div class="page-6-testimonies-highlight-kotaku">Patricia Hernandez</div>
         </a>
-        <a href="https://kotaku.com/"><img src="assets/exports/mobile_page_6/kotaku.png" width="111px" height="32px"
-                                           alt="assets/exports/mobile_page_6/kotaku.png"/></a>
+        <a href="https://kotaku.com/"><img src="assets/exports/mobile_page_6/kotaku_dark.png" width="111px" height="32px"
+                                           alt="assets/exports/mobile_page_6/kotaku_dark.png"/></a>
     </div>
 
     „Holy shitfu*k, this game looks amazeballs”
     <div class="page-6-testimonies-sections-dedication">
         <div class="page-6-testimonies-highlight-youtube-first">niki</div>
         <div class="page-6-testimonies-highlight-youtube-last">to122</div>
-        <img src="assets/exports/mobile_page_6/youtube.png" width="111.61px" height="25px"
+        <img src="assets/exports/mobile_page_6/youtube.png" width="83.7px" height="18.75px"
              alt="assets/exports/mobile_page_6/youtube.png"/>
         user
     </div>
@@ -348,8 +350,51 @@
     </div>
 
 
-    <!-- TODO: find a way for socials to be separate svg-s or icons -->
+    <div class="footer-section-two">
+        <img src="assets/exports/mobile_page_7/carryleft.png" width="30px" height="56px"
+             alt="assets/exports/mobile_page_7/carryleft.png">
+        <a href="https://example.com/"><h1>Contact Us!</h1></a>
+        <img src="assets/exports/mobile_page_7/carryright.png" width="30px" height="56px"
+             alt="assets/exports/mobile_page_7/carryright.png">
+    </div>
 
+    <!-- FIXME: svg's cover the hamburger menu upon its opened, couldn't find a solution for it, z-index solution didn't work for me. -->
+    <div class="footer-section-socials">
+        <a href="https://example.com/">
+            <img src="assets/icons/ionicons.designerpack/logo-facebook.svg" width="" height="32px" style="fill:#FFFBFB"
+                 class="filter-green"
+                 alt="assets/icons/ionicons.designerpack/logo-facebook.svg">
+        </a>
+
+        <a href="https://example.com/">
+            <img src="assets/icons/ionicons.designerpack/logo-twitter.svg" width="" height="32px"
+                 alt="assets/icons/ionicons.designerpack/logo-twitter.svg">
+        </a>
+
+        <a href="https://example.com/">
+            <img src="assets/icons/ionicons.designerpack/logo-youtube.svg" width="" height="32px"
+                 alt="assets/icons/ionicons.designerpack/logo-youtube.svg">
+        </a>
+
+        <a href="https://example.com/">
+            <img src="assets/icons/ionicons.designerpack/logo-instagram.svg" width="" height="32px"
+                 alt="assets/icons/ionicons.designerpack/logo-instagram.svg">
+        </a>
+
+        <a href="https://example.com/">
+            <img src="assets/icons/ionicons.designerpack/logo-twitch.svg" width="" height="32px"
+                 alt="assets/icons/ionicons.designerpack/logo-twitch.svg">
+        </a>
+
+        <a href="https://example.com/">
+            <img src="assets/icons/ionicons.designerpack/logo-discord.svg" width="" height="32px"
+                 alt="assets/icons/ionicons.designerpack/logo-discord.svg">
+        </a>
+    </div>
+
+    <div class="footer-section-copyright">
+        2022 Acid Wizard Studio. All your base are belong to us.
+    </div>
 
 </footer>
 
