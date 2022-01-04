@@ -215,7 +215,7 @@ header {
     height: 600px;
 
     /* Background */
-    background-image: url("../../assets/exports/mobile_page_1/background_highres.png");
+    background-image: url("../../assets/exports/mobile_page_1/background.png");
     background-size: 360px, 600px;
     background-repeat: no-repeat;
 }
@@ -375,6 +375,9 @@ header {
 .page-4-wowfactor-gif-section-two {
     /* Flexbox properties */
     display: flex;
+
+    /* Margins */
+    margin-bottom: 50px;
 }
 
 .page-4-wowfactor-gif-bikeman img {
