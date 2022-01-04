@@ -1,5 +1,9 @@
-# pronovix_mini_project
-Submission for the 2021-2022 ITrainee program
+# README!
+My submission for the 2021-2022 ITrainee program
+
+![Link to github project](https://github.com/sla-ppy/pronovix_mini_project)
+
+This is a private repository at the moment, so please let me know if you need access to view the project on github!
 
 My implementation is primarily based on mobile-only as of the time being.
 I've tried my best to create a design that will be translatable to tablet, as well as desktop.
